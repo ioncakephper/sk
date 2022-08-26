@@ -1,0 +1,25 @@
+{
+  "name": "sk",
+  "version": "2.0.0",
+  "description": "Improved Skelosaurus CLI version with better code and extensive code tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/sk.git"
+  },
+  "author": "Ion Gireada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/sk/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/sk#readme",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "file-easy": "^1.0.3",
+    "hbsr": "^1.0.7",
+    "nodemon": "^2.0.19"
+  }
+}
