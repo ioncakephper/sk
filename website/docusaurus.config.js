@@ -69,6 +69,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {to: '#', label: 'Samples', items: [{type: 'doc', docId: 'samples/studio/user-guide/getting-started/overview', label: 'FTOS User Guide'}]},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',

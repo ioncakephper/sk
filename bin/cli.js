@@ -40,7 +40,7 @@ program
 // program.parse("node cli.js skelo-outline.md".split(/\s+/));
 // program.parse("node cli.js stripe-outline.md apple-style-outline.md yammer-outline.md".split(/\s+/));
 // program.parse("node cli.js all-ftos-documentation-outline.md".split(/\s+/));
-program.parse("node cli.js ./website/skelo-outline.md -d ./website/docs -s ./website/sidebars.js".split(/\s+/));
+program.parse("node cli.js ./website/skelo-outline.md ./website/sample-outline.md -d ./website/docs -s ./website/sidebars.js".split(/\s+/));
 // program.parse("node cli.js ftos-outline.md".split(/\s+/));
 // program.parse("node cli.js b4-outline.md".split(/\s+/));
 

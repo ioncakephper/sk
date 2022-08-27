@@ -43,6 +43,58 @@ const sidebars = {
             },
             "outline-file",
             "category-content"
+        ],
+        "sample-ftos-studio": [{
+                "label": "Getting started",
+                "type": "category",
+                "items": [
+                    "samples/studio/user-guide/getting-started/overview",
+                    "samples/studio/user-guide/getting-started/evolutive-data-core",
+                    "samples/studio/user-guide/getting-started/digital-experience",
+                    "samples/studio/user-guide/getting-started/advanced",
+                    "samples/studio/user-guide/getting-started/automation-processors",
+                    "samples/studio/user-guide/getting-started/security",
+                    "samples/studio/user-guide/getting-started/admin"
+                ]
+            },
+            {
+                "label": "Evolutive data core",
+                "type": "category",
+                "items": [
+                    "samples/studio/user-guide/evolutive-data-core/overview",
+                    "samples/studio/user-guide/evolutive-data-core/data-model-designer",
+                    {
+                        "label": "Data model explorer",
+                        "type": "category",
+                        "items": [
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/overview",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/browse-entities",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/create-entity",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/modify-entity-properties",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/delete-entity",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/export-selected-rows",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/advanced-search",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-attributes",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-data-forms",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-views",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-data-api",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-unique-constraints",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/referenced-entities",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/referencing-entities"
+                        ]
+                    },
+                    "samples/studio/user-guide/evolutive-data-core/data-import-templates",
+                    "samples/studio/user-guide/evolutive-data-core/data-governance",
+                    "samples/studio/user-guide/evolutive-data-core/data-pipes"
+                ]
+            },
+            {
+                "label": "Digital experience",
+                "type": "category",
+                "items": [
+                    "samples/studio/user-guide/digital-experience/overview"
+                ]
+            }
         ]
     },
 };

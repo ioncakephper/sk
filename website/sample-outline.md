@@ -1,0 +1,46 @@
+
+
+## sample-ftos-studio
+
+- @path samples/studio/user-guide
+- Getting started
+    - @path getting-started
+    - Overview
+    - Evolutive data core
+    - Digital experience
+    - Advanced
+    - Automation processors
+    - Security
+    - Admin
+- Evolutive data core
+    - @path evolutive-data-core
+    - Overview
+    - Data model designer
+    - Data model explorer
+        - @path data-model-explorer
+        - Overview
+        - Browse entities
+            - @headings
+                - Entities grid
+                - Action icons
+                - Filter with column filters
+                - Page size selector
+                - Records page navigator
+        - Create entity
+        - Modify entity properties
+        - Delete entity
+        - Export selected rows
+        - Advanced search
+        - Entity attributes
+        - Entity data forms
+        - Entity views
+        - Entity data api
+        - Entity unique constraints
+        - Referenced entities
+        - Referencing entities
+    - Data import templates
+    - Data governance
+    - Data pipes
+- Digital experience
+    - @path digital-experience
+    - Overview
