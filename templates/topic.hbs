@@ -1,0 +1,31 @@
+---
+{{#if title}}
+title: {{title}}
+{{/if}}
+id: {{id}}
+sidebar_label: {{sidebar_label}}
+{{#if description}}
+description: {{{description}}}
+{{/if}}
+---
+
+# {{#if title}}{{{title}}}{{else}}{{{sidebar_label}}}{{/if}}
+{{#if brief}}
+
+<p class="lead">{{{brief}}}</p>
+{{else}}
+{{#if description}}
+
+<p class="lead">{{{description}}}</p>
+{{/if}}
+{{/if}}
+
+
+{{#if hint}}
+:::tip Key point:
+{{{hint}}}
+:::
+{{/if}}
+
+
+{{{headings}}}

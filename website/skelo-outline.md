@@ -1,0 +1,36 @@
+
+## skelo-docs
+
+- Introduction
+    - @id intro
+    - @title Welcome to Skelosaurus documentation
+    - @brief Build a skeleton documentation project quickly and review it with your team. Empty documentation pages are not enough to convince your team? Add headings and even a brief paragraph for topic and headings. Refine documentation outline until all that is missing are the paragraphs, images, tables, etc. 
+- Getting started
+    - Installation
+    - Usage
+        - @headings
+            - skelo commands
+                - build command (default)
+                - help command
+            - Single outline file, default options
+                - Single sidebar per outline file
+                - Several sidebars per outline file
+            - Multiple outline files, default options
+- Outline file
+    - @headings
+        - YAML outline schema
+            - Outline tags
+                - Sidebar outline tags
+                - Topic outline tags
+                - Category outline tags
+        - Markdown outline schema
+            - Outline tags
+                - Sidebar outline tags
+                - Topic outline tags
+                - Category outline tags
+- Category related content
+    - @headings
+        - Basic category
+            - @brief A basic category behavior involves expanding or collapsing its pages.
+        - Auto generated index
+            - @brief Create a category that will show a content page with links to its pages. It generates sidebars.js content that Docusaurus uses to create the auto generated index.
