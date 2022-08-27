@@ -29,6 +29,7 @@
                 - Topic outline tags
                 - Category outline tags
 - Category related content
+    - @brief Learn which outline tags help you describe category items. From basic expand and collapse categories to showing an auto-generated index when clicking the category label. Additionally, describe a category that will show a page when users click the category label. A much easier process than editing the sidebars.js file!
     - @headings
         - Basic category
             - @brief A basic category behavior involves expanding or collapsing its pages.
