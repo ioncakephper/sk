@@ -42,7 +42,7 @@ const sidebars = {
                 ]
             },
             "outline-file",
-            "category-related-content"
+            "category-content"
         ]
     },
 };
