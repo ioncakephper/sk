@@ -1,0 +1,11 @@
+{
+    "autoFolder": true,
+    "autoOverview": {
+        "active": true,
+        "options": {
+            "label": "Overview",
+            "title": "{{{category-label}}}",
+            "titleCase": "sentence"
+        }
+    }
+}

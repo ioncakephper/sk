@@ -9,16 +9,21 @@ sidebar_label: Usage
 
 
 
-## skelo commands
+## skelo
 
 
 
-### build command (default)
+### build (default)
 
 
 
 
-### help command
+### init
+
+Create skelo's configuration file. Edit this file later to change the default configuration. If needed, have several configuration files and specify which one to use in build command.
+
+
+### help
 
 
 

@@ -33,14 +33,7 @@ const sidebars = {
     ...{
         "skelo-docs": [
             "intro",
-            {
-                "label": "Getting started",
-                "type": "category",
-                "items": [
-                    "installation",
-                    "usage"
-                ]
-            },
+            "getting-started",
             "outline-file",
             "category-content"
         ],
@@ -51,10 +44,13 @@ const sidebars = {
                     "samples/studio/user-guide/getting-started/overview",
                     "samples/studio/user-guide/getting-started/evolutive-data-core",
                     "samples/studio/user-guide/getting-started/digital-experience",
-                    "samples/studio/user-guide/getting-started/advanced",
                     "samples/studio/user-guide/getting-started/automation-processors",
+                    "samples/studio/user-guide/getting-started/ecosystem",
+                    "samples/studio/user-guide/getting-started/analytics",
+                    "samples/studio/user-guide/getting-started/configuration-management",
+                    "samples/studio/user-guide/getting-started/advanced-development-tools",
                     "samples/studio/user-guide/getting-started/security",
-                    "samples/studio/user-guide/getting-started/admin"
+                    "samples/studio/user-guide/getting-started/admin-configuration"
                 ]
             },
             {
@@ -78,6 +74,7 @@ const sidebars = {
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-data-forms",
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-views",
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-data-api",
+                            "samples/studio/user-guide/evolutive-data-core/data-model-explorer/extend-data-model",
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/entity-unique-constraints",
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/referenced-entities",
                             "samples/studio/user-guide/evolutive-data-core/data-model-explorer/referencing-entities"
@@ -92,7 +89,26 @@ const sidebars = {
                 "label": "Digital experience",
                 "type": "category",
                 "items": [
-                    "samples/studio/user-guide/digital-experience/overview"
+                    "samples/studio/user-guide/digital-experience/overview",
+                    {
+                        "label": "Digital journeys",
+                        "type": "category",
+                        "items": [
+                            "samples/studio/user-guide/digital-experience/digital-journeys/overview",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/digital-journey",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/form-driven-flow",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/form-driven-flow-mockup",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/custom-flows",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/code-locations",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/digital-journey-map",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/digital-journey-context",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/ui-designer",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/using-custom-css",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/localization",
+                            "samples/studio/user-guide/digital-experience/digital-journeys/code-snippets-support"
+                        ]
+                    },
+                    "samples/studio/user-guide/digital-experience/digital-frontends"
                 ]
             }
         ]

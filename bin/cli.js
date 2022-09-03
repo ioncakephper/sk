@@ -1,17 +1,40 @@
 const program = require('commander')
 
 const path = require("path");
-const { saveDocument } = require("file-easy");
+const { saveDocument, setDefaultExtension } = require("file-easy");
 const hbsr = require("hbsr");
 const yamljs = require("yamljs");
 const beautify = require("beautify");
 
-const {loadMarkdownSidebarDefinitions} = require('../lib/md-app.js')
+const {loadMarkdownSidebarDefinitions} = require('../lib/md-app.js');
+const fs = require('fs');
 
 const VERSION = require("../package.json").version;
 const DESCRIPTION = require("../package.json").description || "";
 
 program.version(VERSION).description(DESCRIPTION).name("skelo");
+
+program
+    .command('init')
+    .description('create configuration file')
+    .argument('[configFilename]', 'configuration filename', 'skelo-config.json')
+    .action((configFilename) => {
+        configFilename = setDefaultExtension(configFilename, '.json')
+        let defaultConfigurationFilename = path.join('../', 'skelo-config.json')
+        let defaultConfiguration = require(defaultConfigurationFilename) || {
+            'autoFolder': true,
+            "autoOverview": {
+                "active": true,
+                "options": {
+                    "label": "Overview",
+                    "title": "{{{category-label}}}",
+                    "titleCase": "sentence"
+                }
+            }
+        }
+        let configurationContent = JSON.stringify(defaultConfiguration, null, 4)
+        saveDocument(configFilename, configurationContent)
+    }); 
 
 program
     .command("build", { isDefault: true })
@@ -28,8 +51,17 @@ program
     .option("--headingsTemplate <path>", "The headings template to use", "headings")
     .option("--topicExtension <extension>", "The topic extension to use", ".md")
     .option("--topicTemplate <path>", "The topic template to use", "topic")
+    .option("-c, --configuration <configFilename>", 'path to configuration file', 'skelo-config.json')
     .action((outlineFiles, options) => {
-        let sidebars = buildSidebarsFromAllFiles(outlineFiles, options);
+        
+        // Load the configuration file
+        // let configuration = require(configFilename);
+        let generalConfiguration = loadConfiguration(options);
+        // console.log(JSON.stringify(configuration, null, 4));
+
+        let sidebars = buildSidebarsFromAllFiles(outlineFiles, {
+            ...{generalConfiguration: generalConfiguration},
+            ...options});
         createSidebarsFile(sidebars, options);
     }); 
 
@@ -40,9 +72,38 @@ program
 // program.parse("node cli.js skelo-outline.md".split(/\s+/));
 // program.parse("node cli.js stripe-outline.md apple-style-outline.md yammer-outline.md".split(/\s+/));
 // program.parse("node cli.js all-ftos-documentation-outline.md".split(/\s+/));
-program.parse("node cli.js ./website/skelo-outline.md ./website/sample-outline.md -d ./website/docs -s ./website/sidebars.js".split(/\s+/));
+program.parse("node cli.js ./website/skelo-outline.md ./website/sample-outline.md -d ./website/docs -s ./website/sidebars.js -c ../skelo-config.json".split(/\s+/));
 // program.parse("node cli.js ftos-outline.md".split(/\s+/));
 // program.parse("node cli.js b4-outline.md".split(/\s+/));
+// program.parse("node cli.js init".split(/\s+/));
+
+
+/**
+ * Loads the configuration file.       
+ * @param {object} [options={}] - the options object.       
+ * @returns {object} the configuration object.      
+ */
+function loadConfiguration(options = {}) {
+    // Get whichever configuration files exist, and use the first configuration path found. First try the configuration file in the local folder, then
+    // try the configuration path in the package (skelo-config.json)
+
+    let viableConfigFilenames = [
+        path.join('./', setDefaultExtension(options.configuration, '.json')),
+        path.join(__dirname, '../', 'skelo-config.json')
+    ]
+    // Check if the file exists, if not, return undefined.
+    .filter((item) => {
+        return fs.existsSync(item)
+    });
+
+    let configFilename = viableConfigFilenames[0];
+
+    if (!configFilename) {
+        throw new Error(`Configuration file not found: ${configFilename}`)
+    }
+    let generalConfiguration = require(configFilename);
+    return generalConfiguration;
+}
 
 /**
  * Builds the sidebar from the given outline file.           

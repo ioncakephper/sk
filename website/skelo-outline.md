@@ -6,12 +6,14 @@
     - @title Welcome to Skelosaurus documentation
     - @brief Build a skeleton documentation project quickly and review it with your team. Empty documentation pages are not enough to convince your team? Add headings and even a brief paragraph for topic and headings. Refine documentation outline until all that is missing are the paragraphs, images, tables, etc. 
 - Getting started
-    - Installation
-    - Usage
-        - @headings
-            - skelo commands
-                - build command (default)
-                - help command
+    - @headings
+        - Installation
+        - Usage
+            - skelo
+                - build (default)
+                - init
+                    - @brief Create skelo's configuration file. Edit this file later to change the default configuration. If needed, have several configuration files and specify which one to use in build command.
+                - help
             - Single outline file, default options
                 - Single sidebar per outline file
                 - Several sidebars per outline file

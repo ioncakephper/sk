@@ -25,5 +25,8 @@
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "rewire": "^6.0.0"
   }
 }

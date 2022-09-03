@@ -5,19 +5,37 @@
 - @path samples/studio/user-guide
 - Getting started
     - @path getting-started
+    - @overview Overview
     - Overview
+        - @title Innovation Studio overview
+        - @headings
+            - Evolutive data core
+            - Digital experience
+            - Automation processors
+            - Ecosystem
+            - Analytics
+            - Configuration management
+            - Advanced development tools
+            - Security
+            - Admin configuration
     - Evolutive data core
     - Digital experience
-    - Advanced
     - Automation processors
+    - Ecosystem
+    - Analytics
+    - Configuration management
+    - Advanced development tools
     - Security
-    - Admin
+    - Admin configuration
 - Evolutive data core
     - @path evolutive-data-core
+    - @overview Overview
     - Overview
+        - @title Evolutive data core overview
     - Data model designer
     - Data model explorer
         - @path data-model-explorer
+        - @overview Overview
         - Overview
         - Browse entities
             - @headings
@@ -35,6 +53,7 @@
         - Entity data forms
         - Entity views
         - Entity data api
+        - Extend data model
         - Entity unique constraints
         - Referenced entities
         - Referencing entities
@@ -43,4 +62,63 @@
     - Data pipes
 - Digital experience
     - @path digital-experience
+    - @overview Overview
     - Overview
+        - @title Digital experience overview
+        - @headings
+            - Digital journeys
+            - Digital apps
+            - Digital frontends
+    - Digital journeys
+        - @path digital-journeys
+        - @overview Overview
+        - Overview
+            - @brief Learn how to manage Digital journeys, Flow-driven flow, and Custom flows. 
+            - @headings
+                - Digital journeys
+                - Form driven flow
+                - Form driven flow mockup
+                - Custom flows
+                - Code locations
+                - Digital journey map
+                - Digital journey context
+                - UI Designer
+                - Using custom CSS
+                - Localization
+                - Code snippets support
+        - Digital journey
+        - Form driven flow
+            - @protect
+            - @brief Form-driven flows allow you to manage an entity record at inserting or editing time using several steps. You can create a step map that shows steps only when certain conditions are met. If needed, you can control whether a step will show based on certain conditions, and indicate the destination following the execution of the last step in a form-driven flow.
+            - @headings
+                - Create form-driven flow
+                    - Prerequisites
+                    - Step 1: Define form driven flow
+                    - Step 2: Set default behavior
+                    - Step 3: (Optional) Use roles to restrict form driven flow use
+                    - Step 4: Save form driven flow definition
+                - Modify form-driven flow
+                - Add form driven flow steps
+                - Custom processor step
+                - Action step
+                - Flow control
+                - Configure field options
+                - Define form actions
+                - Define action groups
+                - Flow map
+                - Define filtered fields
+                - Header items
+                - Link labels to attribute
+                - Display view from another entity
+                - Render custom data extensions
+                - Create custom search forms
+        - Form driven flow mockup
+        - Custom flows
+        - Code locations
+        - Digital journey map
+        - Digital journey context
+        - UI Designer
+        - Using custom CSS
+        - Localization
+        - Code snippets support
+    - Digital frontends
