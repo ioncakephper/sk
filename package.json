@@ -19,7 +19,7 @@
   "dependencies": {
     "beautify": "^0.0.8",
     "commander": "^9.4.1",
-    "file-easy": "^1.0.3",
+    "file-easy": "^1.0.4",
     "hbsr": "^1.0.9",
     "markdown": "^0.5.0",
     "nodemon": "^3.0.0",
