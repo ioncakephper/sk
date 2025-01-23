@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ioncakephper/sk#readme",
   "dependencies": {
     "beautify": "^0.0.8",
-    "commander": "^9.4.1",
+    "commander": "^9.5.0",
     "file-easy": "^1.0.4",
     "hbsr": "^1.0.12",
     "markdown": "^0.5.0",
